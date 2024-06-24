@@ -1,3 +1,61 @@
-.link-item {
+li {
   margin-bottom: 0.5rem;
+}
+
+ul:has(> li) {
+  padding-top: 0.5rem;
+}
+
+@counter-style about {
+  system: cyclic;
+  symbols: "👨‍💻";
+  suffix: " ";
+}
+li.about {
+  list-style-type: about;
+}
+
+@counter-style film {
+  system: cyclic;
+  symbols: "🎥";
+  suffix: " ";
+}
+li.film {
+  list-style-type: film;
+}
+
+@counter-style arrow {
+  system: cyclic;
+  symbols: "→";
+  suffix: " ";
+}
+li.arrow {
+  list-style-type: arrow;
+}
+
+@counter-style computer {
+  system: cyclic;
+  symbols: "💻";
+  suffix: " ";
+}
+li.computer {
+  list-style-type: computer;
+}
+
+@counter-style game {
+  system: cyclic;
+  symbols: "🕹️";
+  suffix: " ";
+}
+li.game {
+  list-style-type: game;
+}
+
+@counter-style blog {
+  system: cyclic;
+  symbols: "📝";
+  suffix: " ";
+}
+li.blog {
+  list-style-type: blog;
 }

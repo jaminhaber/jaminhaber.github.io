@@ -1,0 +1,46 @@
+.set-item {
+  display: flex;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .set-item {
+    flex-direction: column;
+  }
+
+  .set-item > div {
+    padding: 0rem;
+  }
+}
+
+.set-item > img {
+  aspect-ratio: 16/9;
+  width: 360px;
+}
+
+.set-item > div {
+  flex: 1;
+  padding: 0.5rem 1rem;
+}
+
+.set-item h2 {
+  margin: 0rem;
+}
+
+.set-item a {
+  align-items: center;
+  gap: 0.25em;
+}
+.set-item a svg {
+  width: 0.75em;
+  height: 0.75em;
+}
+
+.set-item p {
+  margin: 0px;
+  /* max-height: 4rem; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
