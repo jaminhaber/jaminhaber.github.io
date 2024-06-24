@@ -1,0 +1,18 @@
+.blog-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .blog-list-item:hover {
+  background-color: var(--color-bg-hover);
+  transition: background-color 0.5s var(--ease-soft);
+} */
+
+.blog-list-item-title > p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.blog-list-item-details {
+  text-align: right;
+}

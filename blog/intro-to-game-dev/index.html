@@ -1,0 +1,412 @@
+<html>
+  <head>
+    <title>Blog | Benjamin Haber</title>
+    <link rel="icon" href="../../logo.png" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/" class="font-title"> Benjamin Haber </a>
+    </nav>
+    <main>
+      <div>
+        <a href="/blog">
+          <button class="back-button hover-bg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-chevron-left"
+            >
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            Blog
+          </button>
+        </a>
+      </div>
+      <hr />
+
+      <article>
+        <h2 id="fromgamertogamedeveloper">From gamer to game developer</h2>
+        <p>
+          It's no secret that video games are fun, that's why people play them!
+          A lot of meticulous work goes into making them like that.
+        </p>
+        <p>
+          Making games is nothing like playing them. Games typically reward the
+          player instantly for doing what they are supposed to, while game
+          development is a labor of love. The time between action and reward is
+          much longer, but the magnitude of reward is far greater than what can
+          be granted within a game.
+        </p>
+        <ol>
+          <li>make a game</li>
+          <li>play it</li>
+          <li>improve it</li>
+          <li>learn from it</li>
+          <li>make another game</li>
+        </ol>
+        <p>
+          <img
+            src="https://vibecheck.imgix.net/portfolio/blog/8uf3go.jpg?s=022c89e9e9c7c76a6f51e3de8b09d9e7"
+            alt="Game Dev Meme"
+          />
+        </p>
+        <h2 id="disclaimer">Disclaimer</h2>
+        <p>
+          Most people immediately get excited about developing a multiplayer
+          game like Fortnite, League of Legends, Overwatch, Rainbow 6, Valorant,
+          Roblox etc. While this is a good goal, these games take an immense
+          amount of work to build and sustain. They are usually maintained by
+          large companies staffed with teams of experts.
+        </p>
+        <p>Get acquainted with this picture:</p>
+        <p>
+          <img
+            src="https://vibecheck.imgix.net/portfolio/blog/dunning-kruger.png?s=c1d9c37c6ffa9f3b3d0e21a5989aa528"
+            alt="Dunning-Kruger Effect"
+          />
+        </p>
+        <p>
+          I've only ever made 2D games and I'm writing about making games which
+          puts me somewhere right after "knows nothing".
+        </p>
+        <h2 id="prerequisites">Prerequisites</h2>
+        <h4 id="computeroptional">Computer (optional)</h4>
+        <p>
+          Most people think of games as the computer / console variety. However,
+          the vast majority of games don't even use computers: Sports, board
+          games, card games, and word games are all examples of this. If you
+          want to develop video games, learning from these other games will
+          unlock your full potential.
+        </p>
+        <p>
+          This article will focus on computer games, so its recommended to use a
+          computer.
+        </p>
+        <h4 id="basicmath">Basic Math</h4>
+        <p>
+          Most games use math behind the scenes to make things work. The math
+          gets much more complicated for 3D games, so if you want to keep the
+          math part simple, start with a 2D game.
+        </p>
+        <p>
+          In my experience, making games actually helps solidify concepts in
+          math and leads to a deeper understanding how math applies to daily
+          life.
+        </p>
+        <h4 id="time">Time</h4>
+        <p>
+          Making games takes a long time. You will have to commit to it if you
+          want to make a game worth playing. If you play a lot of games, that
+          might be a good place to cut time from your schedule to make them.
+        </p>
+        <h2 id="design">Design</h2>
+        <p>
+          Designing the game you want to make is the most important step. This
+          should probably take place on a piece of paper or drawing software
+          where you can let ideas flow freely.
+        </p>
+        <p>In this phase you should think of your game abstractly:</p>
+        <ol>
+          <li>what is the goal?</li>
+          <li>what is the reward?</li>
+          <li>what is the obstacle?</li>
+        </ol>
+        <p>
+          These are some examples of games I have made as abstract concepts:
+        </p>
+        <h4 id="arcade">Arcade</h4>
+        <p>
+          Two players (or a player and an AI) compete against each other for a
+          common goal. This can be draining their health, getting a ball into a
+          goal, beating their score or anything else you can come up with.
+        </p>
+        <ol>
+          <li>goal: score points</li>
+          <li>reward: beating an opponent</li>
+          <li>obstacle: another person</li>
+        </ol>
+        <p>
+          <img
+            src="https://vibecheck.imgix.net/portfolio/blog/game_2.png?s=3480c39f9794a0436c70badd29b99f82"
+            alt="Arcade Game"
+          />
+        </p>
+        <p>Some examples include:</p>
+        <ol>
+          <li>
+            <a href="https://www.mathplayground.com/puzzle_head_soccer.html"
+              >Head Soccer</a
+            >
+          </li>
+          <li><a href="https://www.ponggame.org/">Pong</a></li>
+          <li><a href="https://www.streetfighter.com/en">Street fighter</a></li>
+          <li>
+            <a href="https://www.smashbros.com/en_US/">Super smash bros</a>
+          </li>
+          <li>
+            <a href="https://supercell.com/en/games/brawlstars/">Brawl Stars</a>
+          </li>
+        </ol>
+        <h4 id="puzzle">Puzzle</h4>
+        <p>A player must overcome an increasingly difficult set of tasks.</p>
+        <ol>
+          <li>goal: complete puzzles</li>
+          <li>reward: more puzzles</li>
+          <li>obstacle: the difficulty of the puzzle</li>
+        </ol>
+        <p>
+          <img
+            src="https://vibecheck.imgix.net/portfolio/blog/game_3.png?s=7a49f97a9841274a329f64b143705b31"
+            alt="Puzle "
+          />
+        </p>
+        <p>Notable examples:</p>
+        <ul>
+          <li>
+            <a href="https://www.king.com/game/candycrush">Candy Crush</a>
+          </li>
+          <li><a href="https://chillgames.net/games/sokoban">Sokoban</a></li>
+          <li><a href="https://www.angrybirds.com/">Angry Birds</a></li>
+        </ul>
+        <h4 id="actionroguelike">Action-Roguelike</h4>
+        <p>
+          Roguelike commonly refers to games with progression, perma-death, and
+          randomly generated levels. In a simple example, the player moves
+          around and picks up randomly spawning weapons / powerups while
+          fighting an ever-increasing onslaught of enemies. When the player
+          dies, they must restart the game.
+        </p>
+        <ol>
+          <li>goal: survice</li>
+          <li>reward: better weapons</li>
+          <li>obstacle: enemies who get stronger / more numerous over time.</li>
+        </ol>
+        <p>
+          <img
+            src="https://vibecheck.imgix.net/portfolio/blog/game_1.png?s=36c324bb115e602730310774ae30bfc3"
+            alt="Action Game"
+          />
+        </p>
+        <p>Some notable examples:</p>
+        <ul>
+          <li><a href="https://www.riskofrain.com/">Risk of Rain</a></li>
+          <li>
+            <a
+              href="https://store.steampowered.com/app/113200/The_Binding_of_Isaac/"
+              >The binding of Isaac</a
+            >
+          </li>
+          <li>
+            <a href="https://apps.apple.com/us/app/survivor-io/id1528941310"
+              >Survivor!.io</a
+            >
+          </li>
+        </ul>
+        <h4 id="andmore">And more!</h4>
+        <p>
+          This list is not exhaustive or correct, but should provide a starting
+          point to try and imagine what can be done.
+        </p>
+        <p>Some other simple genres include:</p>
+        <ol>
+          <li>Platformer</li>
+          <li>Story game</li>
+          <li>Shooter</li>
+          <li>RPG</li>
+        </ol>
+        <p>… Or any mix of the genres!</p>
+        <h2 id="theming">Theming</h2>
+        <p>
+          The world that your game will take place in is almost as important as
+          the game itself.
+        </p>
+        <p>
+          Does your game take place in a fantasy world? In the future? On a
+          yacht off the coast of Italy? Inside the human body? In space? There
+          are really no rules to this.
+        </p>
+        <p>Try thinking of a wacky combinations of genre and theme:</p>
+        <iframe
+          height="74px"
+          src="https://benjaminhaber.com/tools/game-concept-generator"
+        ></iframe>
+        <h2 id="pickingagameengine">Picking a game engine</h2>
+        <p>
+          You should pick a game engine and learn how to use it. This is the
+          primary goal of building your first game. Even if the game sucks, you
+          should have ideas of how you could make it better if you were to start
+          again.
+        </p>
+        <p>
+          I recommend <a href="https://godotengine.org/">Godot</a> because its
+          open source (which means its free) and has a good amount of tutorials
+          out there. Any question you are likely to have has already been
+          answered and is available on Google.
+        </p>
+        <p>
+          <a href="https://www.youtube.com/watch?v=LOhfqjmasi0"
+            >Here is a link to a good tutorial series on the engine</a
+          >
+        </p>
+        <p>Some other game engines I have used in my life:</p>
+        <ol>
+          <li>
+            <a href="https://unity.com/">Unity</a> (industry standard, free at
+            first)
+          </li>
+          <li>
+            <a href="https://gamemaker.io/en">GameMaker</a> (simple, somewhat
+            limiting)
+          </li>
+          <li>
+            <a href="https://p5js.org/">P5.js</a> (quick to get started, not
+            good for advanced games)
+          </li>
+          <li>
+            <a href="https://bevyengine.org/">Bevy</a> (cool, but advanced)
+          </li>
+        </ol>
+        <h2 id="buildingyourgame">Building your game</h2>
+        <p>
+          Once you have chosen a game engine, you will have to find a way to
+          model your game in a way that works with the engine. Below are some
+          common concepts between game engines:
+        </p>
+        <ol start="2">
+          <li>
+            Entity - an object that exists within the game (player, enemy,
+            bullet, spell, coin)
+          </li>
+          <li>Transform - the position of an entity in the world</li>
+          <li>State - data (score, health, mana)</li>
+          <li>Sprite - an image that exists within a game</li>
+          <li>
+            Collisions - detect when two entities overlap and execute some logic
+          </li>
+          <li>Keyboard input - do something when a key is pushed</li>
+          <li>
+            Mouse input - responding to the position of the cursor as well as
+            mouse clicks
+          </li>
+          <li>Event loop - a fixed set of commands that run in a loop</li>
+        </ol>
+        <h4 id="headballexample">Head-ball example</h4>
+        <p>
+          Lets say there is a game where the player must keep a ball from
+          touching the floor by moving left and right. When they hit the ball,
+          it bounces up, but comes back down due to gravity.
+        </p>
+        <p><strong>Entities</strong></p>
+        <ul>
+          <li>Ball</li>
+          <li>Player</li>
+        </ul>
+        <p><strong>Collision detection</strong></p>
+        <ul>
+          <li>Ball / Player collision -&gt; bounce ball up</li>
+          <li>Ball / floor collision -&gt; End game</li>
+        </ul>
+        <p><strong>Keyboard input</strong></p>
+        <ul>
+          <li>move player left / right</li>
+        </ul>
+        <p><strong>Event Loop</strong></p>
+        <ul>
+          <li>Move ball based on velocity</li>
+          <li>Apply gravity to ball (accelerate down)</li>
+        </ul>
+        <p>
+          <img
+            src="https://vibecheck.imgix.net/portfolio/blog/game_concept_entity.png?s=ce046540f7967691fc2c164d7bf19013"
+            alt="Game Engine Concepts"
+          />
+        </p>
+        <h2 id="themaths">The maths</h2>
+        <h4 id="geometry">Geometry</h4>
+        <p>
+          Geometry is useful in collision detection. Most objects in games are
+          represented as either rectangles or circles, which makes it easy to
+          compute how far they are from each other.
+        </p>
+        <h4 id="algebra">Algebra</h4>
+        <p>
+          A 2D game will always take place on a grid. The position (transform)
+          of an entity can be understood as a distance from the origin of the
+          grid. You will need to move things around the grid as well as use some
+          basic math to determine the distance between things on the grid.
+        </p>
+        <p>
+          <img
+            src="https://vibecheck.imgix.net/portfolio/blog/game_math_axes.png?s=d8137ebbc16af40e1999c21eff486b76"
+            alt="Algebra"
+          />
+        </p>
+        <h4 id="physicscalculus">Physics / Calculus</h4>
+        <p>
+          The word calculus is scary but is actually somewhat mundane and
+          universally understood. The key concept for application to game design
+          is the relationship between position, velocity and acceleration.
+        </p>
+        <p>Imagine a car that moves along a line.</p>
+        <p>
+          <img
+            src="https://vibecheck.imgix.net/portfolio/blog/game_math_calc.png?s=5da3c236db1c25bdd5c1092ef7a5d34b"
+            alt="Game Calculus"
+          />
+        </p>
+        <p>
+          In your game you can move things either by position, velocity, or
+          acceleration.
+        </p>
+        <h2 id="testing">Testing</h2>
+        <p>
+          Once you have the game working, you should play it over and over
+          again. This will help you discover issues as well as opportunities you
+          may not have noticed when you were initially designing your game.
+        </p>
+        <p>
+          When you are satisfied, its time to collect feedback from others. Good
+          feedback is extremely valuable and hard to find, so its important to
+          follow these rules:
+        </p>
+        <ol>
+          <li>
+            Fresh eyes are like gold - people only get to play your game for the
+            first time once, so pay extra close attention to what they do, what
+            they like, and where they get stuck.
+          </li>
+          <li>
+            Don't explain too much - if you preface the game, you will influence
+            how the tester sees the game.
+          </li>
+          <li>
+            Ask for the feedback you want - if you just want approval and
+            encouragement, say that. If you want structured feedback, or ideas
+            for improvement, say that. This will prevent feelings from getting
+            hurt!
+          </li>
+        </ol>
+        <h2 id="thatsit">Thats it!</h2>
+        <p>
+          Once you are happy with your game, you should find a way to export it
+          and store it somewhere so you can come back to it.
+        </p>
+        <p>
+          If you are proud of it, you can try to put it online. Many people post
+          games to places like <a href="https://itch.io/">Itch.io</a>. If you
+          are not proud of it, keep it somewhere so you can see how much you
+          improved after your next game.
+        </p>
+      </article>
+    </main>
+  </body>
+</html>

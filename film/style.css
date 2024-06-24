@@ -1,0 +1,52 @@
+.film-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.film-item {
+  position: relative;
+  cursor: pointer;
+  color: white;
+}
+
+.film-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.film-item-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.65);
+  opacity: 0;
+  color: white;
+}
+
+.film-item-overlay h2 {
+  margin: 0;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.film-item-overlay > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  inset: auto 1rem 1rem 1rem;
+}
+
+.film-item:hover .film-item-overlay {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+iframe.film {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
