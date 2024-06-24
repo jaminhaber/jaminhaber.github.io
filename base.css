@@ -1,0 +1,59 @@
+@font-face {
+  font-family: ONAMURA-UltraBold;
+  src: url("fonts/ONAMURA-UltraBold.woff");
+}
+
+@font-face {
+  font-family: Covik;
+  src: url("fonts/Covik-Sans-Mono-Regular.woff");
+}
+
+:root {
+  --color-text-primary: #344e41;
+  --color-text-secondary: #3a5a40;
+  --color-link: #588157;
+  --color-link-decoration: #a3b18a;
+  --color-link-hover: #344e41;
+  --color-bg: #dad7cd;
+  --color-bg-light: #f5f5f5;
+  --color-bg-dark: #696969;
+
+  --font-title: "ONAMURA-UltraBold", serif;
+  --font-body: Covik, ui-monospace, SFMono-Regular, "Ubuntu Mono", monospace;
+  --ease-soft: cubic-bezier(0.35, 0.5, 0, 1);
+
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration-color: var(--color-link-decoration);
+  text-decoration-thickness: 0.1em;
+  text-underline-offset: 0.25em;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+  text-decoration-color: var(--color-link-hover);
+  transition:
+    color 0.5s var(--ease-soft),
+    text-decoration-color 0.5s var(--ease-soft);
+}

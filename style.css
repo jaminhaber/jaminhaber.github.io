@@ -1,36 +1,4 @@
-@font-face {
-  font-family: ONAMURA-UltraBold;
-  src: url("fonts/ONAMURA-UltraBold.woff");
-}
-
-@font-face {
-  font-family: Covik;
-  src: url("fonts/Covik-Sans-Mono-Regular.woff");
-}
-
-:root {
-  --color-text-primary: #344e41;
-  --color-text-secondary: #3a5a40;
-  --color-link: #588157;
-  --color-link-decoration: #a3b18a;
-  --color-link-hover: #344e41;
-  --color-bg: #dad7cd;
-  --color-bg-light: #f5f5f5;
-  --color-bg-dark: #696969;
-
-  --font-title: "ONAMURA-UltraBold", serif;
-  --font-body: Covik, ui-monospace, SFMono-Regular, "Ubuntu Mono", monospace;
-  --ease-soft: cubic-bezier(0.35, 0.5, 0, 1);
-
-  font-family: var(--font-body);
-  background-color: var(--color-bg);
-  color: var(--color-text-primary);
-}
-
-.hover-bg:hover {
-  background-color: var(--color-bg-light);
-  transition: background-color 0.5s var(--ease-soft);
-}
+@import url("base.css");
 
 body {
   width: 100%;
@@ -43,37 +11,6 @@ body {
   box-sizing: border-box;
 }
 
-h1 {
-  font-size: 2rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-h3 {
-  font-size: 1.25rem;
-}
-
-h4 {
-  font-size: 1rem;
-}
-
-a {
-  color: var(--color-link);
-  text-decoration-color: var(--color-link-decoration);
-  text-decoration-thickness: 0.1em;
-  text-underline-offset: 0.25em;
-}
-
-a:hover {
-  color: var(--color-link-hover);
-  text-decoration-color: var(--color-link-hover);
-  transition:
-    color 0.5s var(--ease-soft),
-    text-decoration-color 0.5s var(--ease-soft);
-}
-
 nav {
   display: flex;
   justify-content: center;
@@ -84,6 +21,11 @@ nav {
 nav a {
   font-size: 3rem;
   text-decoration: none;
+}
+
+.hover-bg:hover {
+  background-color: var(--color-bg-light);
+  transition: background-color 0.5s var(--ease-soft);
 }
 
 .font-bold {
@@ -117,61 +59,8 @@ nav a {
   margin-bottom: 0.5rem;
 }
 
-.mr-1 {
-  margin-right: 0.25rem;
-}
-
-.ml-1 {
-  margin-left: 0.25rem;
-}
-
 .no-underline {
   text-decoration: none;
-}
-
-.link {
-  position: relative;
-}
-
-.link:after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  bottom: -1px;
-  right: auto;
-  left: 0;
-  background-color: currentColor;
-  /* visibility: hidden; */
-  transition: all 0.3s var(--ease-soft);
-}
-/* 
-.group:hover .link:after,
-.link:hover:after {
-  visibility: visible;
-  width: 105%;
-  left: 0;
-  right: auto;
-} */
-
-.back-button {
-  display: inline;
-  border: 2px solid black;
-  border-radius: 0.25rem;
-  background-color: transparent;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  padding: 0rem 0.5rem 0rem 0.25rem;
-}
-.back-button svg {
-  width: 1.25rem;
-  height: 1.25rem;
-}
-
-.back-button:hover {
-  border-color: black;
-  transition: border-color 0.5s var(--ease-soft);
 }
 
 .breadcrumbs {

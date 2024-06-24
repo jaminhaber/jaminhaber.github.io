@@ -1,94 +1,96 @@
-<title>Game Concept Generator</title>
-<link rel="stylesheet" href="../style.css" />
+<head>
+  <title>Game Concept Generator</title>
+  <link rel="stylesheet" href="../base.css" />
 
-<script type="module">
-  const genres = [
-    "Action",
-    "Adventure",
-    "Arcade",
-    "Clicker",
-    "Deck-building",
-    "Fighting",
-    "Idle",
-    "Music",
-    "Party",
-    "Platformer",
-    "Puzzle",
-    "Racing",
-    "Roguelike",
-    "RPG",
-    "Shooter",
-    "Simulation",
-    "Sports",
-    "Story",
-    "Strategy",
-    "Survival",
-    "Tabletop",
-    "Tower defense",
-    "Visual novel",
-  ];
+  <script type="module">
+    const genres = [
+      "Action",
+      "Adventure",
+      "Arcade",
+      "Clicker",
+      "Deck-building",
+      "Fighting",
+      "Idle",
+      "Music",
+      "Party",
+      "Platformer",
+      "Puzzle",
+      "Racing",
+      "Roguelike",
+      "RPG",
+      "Shooter",
+      "Simulation",
+      "Sports",
+      "Story",
+      "Strategy",
+      "Survival",
+      "Tabletop",
+      "Tower defense",
+      "Visual novel",
+    ];
 
-  const theme = [
-    "Alien",
-    "Cat",
-    "Comedy",
-    "Construction",
-    "Cooking",
-    "Cyberpunk",
-    "Detective",
-    "Dinosaur",
-    "Dog",
-    "Fairytale",
-    "Fantasy",
-    "Food",
-    "Historical",
-    "Horror",
-    "Magic",
-    "Medieval",
-    "Military",
-    "Mystery",
-    "Ninja",
-    "Pirate",
-    "Post-apocalyptic",
-    "Robot",
-    "Romance",
-    "Sci-fi",
-    "Space",
-    "Spaghetti",
-    "Steampunk",
-    "Superhero",
-    "Underwater",
-    "Urban planning",
-    "Viking",
-    "Western",
-    "Zombie",
-  ];
+    const theme = [
+      "Alien",
+      "Cat",
+      "Comedy",
+      "Construction",
+      "Cooking",
+      "Cyberpunk",
+      "Detective",
+      "Dinosaur",
+      "Dog",
+      "Fairytale",
+      "Fantasy",
+      "Food",
+      "Historical",
+      "Horror",
+      "Magic",
+      "Medieval",
+      "Military",
+      "Mystery",
+      "Ninja",
+      "Pirate",
+      "Post-apocalyptic",
+      "Robot",
+      "Romance",
+      "Sci-fi",
+      "Space",
+      "Spaghetti",
+      "Steampunk",
+      "Superhero",
+      "Underwater",
+      "Urban planning",
+      "Viking",
+      "Western",
+      "Zombie",
+    ];
 
-  const flipCoin = () => Math.random() > 0.5;
-  const sample = (arr) => arr[Math.floor(Math.random() * arr.length)];
+    const flipCoin = () => Math.random() > 0.5;
+    const sample = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
-  function getGameConcept() {
-    const genre = sample(genres);
-    const secondGenre = flipCoin()
-      ? sample(genres.filter((g) => g !== genre))
-      : null;
-    const theme1 = sample(theme);
-    return `${theme1} ${genre}${secondGenre ? `/${secondGenre}` : ""} Game`;
-  }
+    function getGameConcept() {
+      const genre = sample(genres);
+      const secondGenre = flipCoin()
+        ? sample(genres.filter((g) => g !== genre))
+        : null;
+      const theme1 = sample(theme);
+      return `${theme1} ${genre}${secondGenre ? `/${secondGenre}` : ""} Game`;
+    }
 
-  const concept = document.getElementById("concept");
-  function newConcept() {
-    concept.textContent = getGameConcept();
-  }
+    const concept = document.getElementById("concept");
+    function newConcept() {
+      concept.textContent = getGameConcept();
+    }
 
-  document
-    .getElementById("new-concept-button")
-    .addEventListener("click", newConcept);
+    document
+      .getElementById("new-concept-button")
+      .addEventListener("click", newConcept);
 
-  newConcept();
-</script>
+    newConcept();
+  </script>
+</head>
 
-<div className="p-2">
+<body>
   <div id="concept">Concept</div>
   <button
     id="new-concept-button"
@@ -96,4 +98,4 @@
   >
     Generate
   </button>
-</div>
+</body>
