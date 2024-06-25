@@ -59,3 +59,22 @@ li.game {
 li.blog {
   list-style-type: blog;
 }
+
+@counter-style people {
+  system: cyclic;
+  symbols: "👤";
+  suffix: " ";
+}
+
+li.person {
+  list-style-type: person;
+}
+
+@counter-style people {
+  system: cyclic;
+  symbols: "👥";
+  suffix: " ";
+}
+li.people {
+  list-style-type: people;
+}
