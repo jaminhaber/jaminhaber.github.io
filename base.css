@@ -27,6 +27,11 @@
   color: var(--color-text-primary);
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   font-size: 2rem;
 }
@@ -56,4 +61,8 @@ a:hover {
   transition:
     color 0.5s var(--ease-soft),
     text-decoration-color 0.5s var(--ease-soft);
+}
+
+iframe {
+  border: 0;
 }
