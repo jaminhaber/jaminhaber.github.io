@@ -10,9 +10,10 @@ img {
   border: 2px solid var(--color-text-primary);
 }
 
-section {
+section#bio {
   max-width: 400px;
   margin: 0 auto;
+  text-align: center;
 }
 
 h1 {

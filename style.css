@@ -2,7 +2,7 @@
 
 body {
   width: 100%;
-  max-width: 800px;
+  max-width: 48rem;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-left: auto;
@@ -21,6 +21,7 @@ nav {
 nav a {
   font-size: 3rem;
   text-decoration: none;
+  text-align: center;
 }
 
 .hover-bg:hover {
